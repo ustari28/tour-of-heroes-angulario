@@ -14,6 +14,10 @@ import { HeroDetailComponent }  from './hero-detail/hero-detail.component';
 import { HeroesComponent }      from './heroes/heroes.component';
 import { HeroSearchComponent }  from './hero-search/hero-search.component';
 import { MessagesComponent }    from './messages/messages.component';
+import { AcoountComponent } from './acoount/acoount.component';
+import { AccountComponent } from './account/account.component';
+import { DatepickerComponent } from './datepicker/datepicker.component';
+import { ChartsComponent } from './charts/charts.component';
 
 @NgModule({
   imports: [
@@ -35,7 +39,11 @@ import { MessagesComponent }    from './messages/messages.component';
     HeroesComponent,
     HeroDetailComponent,
     MessagesComponent,
-    HeroSearchComponent
+    HeroSearchComponent,
+    AcoountComponent,
+    AccountComponent,
+    DatepickerComponent,
+    ChartsComponent
   ],
   bootstrap: [ AppComponent ]
 })

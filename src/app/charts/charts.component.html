@@ -1,0 +1,19 @@
+<header class="widget-handle">
+  <h5>Widget Title</h5>
+  <div class="widget-controls">
+    <a title="Refresh">
+      <i *ngIf="showSpinner" class="fa fa-refresh fa-spin"></i>
+    </a>
+  </div>
+</header>
+<span >
+  <google-chart #chart1 [data]='pieChartData' *ngIf="!showSpinner"></google-chart>
+</span>
+<p>
+  <input #task/>
+  <input #taskvalue />
+  <button (click)="updateChart(task.value, taskvalue.value)">updateChart</button>
+</p>
+<div class="chart-container" style="position: relative; height:20vh; width:80vw">
+    <canvas id="canvas"></canvas>
+</div>
